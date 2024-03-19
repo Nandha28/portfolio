@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Software Engineer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Add your custom styles here */
+      .hero-section {
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        background-image: url("images/pic.png");
+        background-size: cover;
+        height: 100vh;
+        color: rgb(7, 7, 7); /* Text color */
+      }
+
+      .hero-content {
+        max-width: 600px; /* Adjust the max-width as needed */
+        margin-left: auto; /* Align content to the right */
+      }
+
+      .hero-content h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        text-align: right; /* Align text to the right */
+      }
+
+      .hero-content p {
+        font-size: 1.5rem;
+        margin-bottom: 4rem;
+        text-align: right; /* Align text to the right */
+      }
+
+      .hero-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px; /* Optional: Add border-radius to the image */
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div>
+          <a href="#" class="text-2xl font-bold">My Portfolio</a>
+        </div>
+        <div>
+          <ul class="flex space-x-4">
+            <li><a href="#about" class="hover:text-gray-300">About</a></li>
+            <li>
+              <a href="#projects" class="hover:text-gray-300">Projects</a>
+            </li>
+            <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container mx-auto flex">
+        <div class="hero-content">
+          <h1 class="text-4xl font-bold mb-4">Hi, I'm NANDHA</h1>
+          <p class="text-lg mb-8">
+            As an undergraduate entrepreneur, I excel in leadership, team
+            management, and diligent work ethic, driving success in my ventures.
+          </p>
+          <!-- Add more text content here if needed -->
+        </div>
+        <div class="hero-image"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-8">About Me</h2>
+        <p class="mb-4">
+          As an ambitious undergraduate and seasoned entrepreneur, I possess a
+          strong foundation in leadership and team management skills, coupled
+          with a relentless work ethic. My experiences as a team leader on
+          various college projects and competitions, such as the SIEP eBike
+          Challenge where we emerged victorious in the hill climb test, have
+          honed my abilities to drive teams towards success. Beyond my
+          leadership prowess, I am proficient in Java, ReactJS, C, and MySQL,
+          showcasing a diverse technical skill set that adds value to my
+          entrepreneurial endeavors.
+        </p>
+        <p class="mb-4">
+          <strong>Leadership and Team Management Skills:</strong>
+        </p>
+        <ul class="list-disc list-inside mb-4">
+          <li>
+            Proven track record as a team leader in college projects and
+            competitions, demonstrating the ability to guide teams towards
+            achieving challenging goals.
+          </li>
+          <li>
+            Skilled in fostering collaboration, resolving conflicts, and
+            ensuring project milestones are met within deadlines.
+          </li>
+          <li>
+            Experienced in delegating tasks effectively, optimizing team
+            strengths, and maintaining a positive team dynamic to enhance
+            productivity and creativity.
+          </li>
+        </ul>
+
+        <p class="mb-4">
+          <strong>Technical Proficiencies:</strong>
+        </p>
+        <ul class="list-disc list-inside mb-4">
+          <li>
+            Java: Proficient in developing robust and scalable applications
+            leveraging Java's versatility and object-oriented programming
+            principles.
+          </li>
+          <li>
+            ReactJS: Skilled in building dynamic and responsive user interfaces,
+            harnessing ReactJS's component-based architecture and state
+            management capabilities.
+          </li>
+          <li>
+            C: Experienced in low-level programming and algorithmic
+            problem-solving, contributing to efficient and optimized codebases.
+          </li>
+          <li>
+            MySQL: Proficient in database design, querying, and management,
+            ensuring data integrity and scalability for applications and
+            projects.
+          </li>
+        </ul>
+
+        <p class="mb-4">
+          <strong>Additional Attributes:</strong>
+        </p>
+        <ul class="list-disc list-inside mb-4">
+          <li>
+            Innovative Thinker: Continuously exploring emerging technologies and
+            innovative solutions to stay ahead in the rapidly evolving tech
+            landscape.
+          </li>
+          <li>
+            Adaptable and Resilient: Thrive in challenging environments,
+            adapting quickly to change while maintaining a focus on achieving
+            objectives.
+          </li>
+          <li>
+            Entrepreneurial Spirit: Passionate about identifying market
+            opportunities, developing strategic business plans, and executing
+            initiatives to drive business growth and success.
+          </li>
+        </ul>
+
+        <p>
+          By combining my leadership acumen, technical prowess, and
+          entrepreneurial mindset, I am poised to excel in diverse and dynamic
+          environments, driving impactful projects and ventures that contribute
+          to meaningful innovation and business success.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 bg-gray-100">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-8">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Card 1 -->
+          <div class="bg-white shadow-md p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-2">SIEP E-BIKE CHALLENGE</h3>
+            <img src="images/IMG-20240126-WA0011.jpg" alt="e-bike" class="mb-4 rounded-md" />
+            <p class="mb-4">
+              We participated in the Siep E-Bike Challenge, showcasing a
+              retrofitted electric bike that blends advanced technology with
+              classic design, promoting sustainable urban mobility.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">View Project</a>
+          </div>
+          <!-- Project Card 2 -->
+          <div class="bg-white shadow-md p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-2">ANTI SLEEP ALARM FOR DRIVERS</h3>
+            <img
+              src="images/IMG_20230424_143751.jpg"
+              alt="sleep-alarm"
+              class="mb-4 rounded-md"
+            />
+            <p class="mb-4">
+              We developed an anti-sleep alarm system for drivers, utilizing
+              advanced sensors and AI algorithms to detect drowsiness and alert
+              drivers, ensuring road safety and preventing accidents caused by
+              fatigue.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">View Project</a>
+          </div>
+          <!-- Add more project cards here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+        <form id="contactForm" class="max-w-lg mx-auto">
+          <div class="mb-4">
+            <label for="name" class="block text-sm font-medium text-gray-700"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-sm font-medium text-gray-700"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-sm font-medium text-gray-700"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+   <!-- Footer Section -->
+<footer class="bg-gray-800 text-white py-4">
+  <div class="container mx-auto flex justify-center items-center">
+    <div class="flex space-x-4">
+      <!-- Social Icons -->
+     <a href="https://www.instagram.com/yourprofile" class="text-white hover:text-gray-400"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <a href="https://twitter.com/Mr_Conqurer23" class="text-white hover:text-gray-400"
+        ><i class="fab fa-twitter"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/nandhakumar-a-28529726a/" class="text-white hover:text-gray-400"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <a href="https://github.com/Nandha28" class="text-white hover:text-gray-400"
+        ><i class="fab fa-github"></i
+      ></a>
+      <!-- Add more social icons with your profile links here -->
+    </div>
+  </div>
+  <div class="container mx-auto mt-2 text-center">
+    <p>&copy; 2024 NANDHA Portfolio. All rights reserved.</p>
+  </div>
+</footer>
+
+    <!-- Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+
+    <!-- JavaScript for form submission handling -->
+    <script src="script.js"></script>
+  </body>
+</html>
