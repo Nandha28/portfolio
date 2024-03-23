@@ -12,7 +12,7 @@
       /* Add your custom styles here */
       .hero-section {
         display: flex;
-       
+
         justify-content: center;
         padding-top: 2rem;
         background-image: url("images/banner\ iron\ 2.jpg");
@@ -59,6 +59,20 @@
       }
       body {
         text-align: center;
+      }
+      @media (max-width: 768px) {
+        .hero-content h1 {
+          font-size: 3rem; /* Decrease font size for smaller screens */
+        }
+
+        .hero-content p {
+          font-size: 1.25rem; /* Decrease font size for smaller screens */
+        }
+
+        .profile-picture {
+          width: 200px; /* Decrease image size for smaller screens */
+          height: 200px; /* Decrease image size for smaller screens */
+        }
       }
     </style>
   </head>
