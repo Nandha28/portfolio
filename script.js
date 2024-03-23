@@ -24,4 +24,7 @@ contactForm.addEventListener("submit", function (e) {
 
   // Display a success message (you can replace this with your own UI/UX)
   alert("Message sent successfully!");
+
+  
 });
+ 

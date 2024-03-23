@@ -12,40 +12,56 @@
       /* Add your custom styles here */
       .hero-section {
         display: flex;
-        align-items: center;
-        padding: 2rem;
-        background-image: url("images/pic.png");
+       
+        justify-content: center;
+        padding-top: 2rem;
+        background-image: url("images/banner\ iron\ 2.jpg");
         background-size: cover;
-        height: 100vh;
-        color: rgb(7, 7, 7); /* Text color */
+        background-position: left;
+        height: 90vh;
+        color: rgb(8, 8, 8); /* Text color */
       }
 
       .hero-content {
-        max-width: 600px; /* Adjust the max-width as needed */
-        margin-left: auto; /* Align content to the right */
+        text-align: center;
       }
 
       .hero-content h1 {
         font-size: 4rem;
         font-weight: bold;
         margin-bottom: 1rem;
-        text-align: right; /* Align text to the right */
       }
 
       .hero-content p {
         font-size: 1.5rem;
-        margin-bottom: 4rem;
-        text-align: right; /* Align text to the right */
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
       }
 
-      .hero-image img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px; /* Optional: Add border-radius to the image */
+      .profile-picture {
+        width: 250px;
+        height: 250px;
+        border-radius: 80%;
+        overflow: hidden;
+        margin: 0 auto 1rem; /* Center the image horizontally and add spacing below */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added a subtle box shadow */
+      }
+
+      .profile-picture img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+      }
+
+      h1 {
+        text-align: center;
+      }
+      body {
+        text-align: center;
       }
     </style>
   </head>
-
   <body class="bg-gray-100 font-sans">
     <!-- Navigation Bar -->
     <nav class="bg-gray-800 text-white p-4">
@@ -67,8 +83,11 @@
 
     <!-- Hero Section -->
     <section class="hero-section">
-      <div class="container mx-auto flex">
+      <div class="container mx-auto">
         <div class="hero-content">
+          <div class="profile-picture">
+            <img src="images/p3.jpg" alt="Profile Picture" />
+          </div>
           <h1 class="text-4xl font-bold mb-4">Hi, I'm NANDHA</h1>
           <p class="text-lg mb-8">
             As an undergraduate entrepreneur, I excel in leadership, team
@@ -76,14 +95,13 @@
           </p>
           <!-- Add more text content here if needed -->
         </div>
-        <div class="hero-image"></div>
       </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-20 px-4">
       <div class="container mx-auto">
-        <h2 class="text-3xl font-bold mb-8">About Me</h2>
+        <h2 class="text-3xl font-bold mb-8">ABOUT ME</h2>
         <p class="mb-4">
           As an ambitious undergraduate and seasoned entrepreneur, I possess a
           strong foundation in leadership and team management skills, coupled
@@ -96,7 +114,7 @@
           entrepreneurial endeavors.
         </p>
         <p class="mb-4">
-          <strong>Leadership and Team Management Skills:</strong>
+          <strong>LEADERSHIP AND TEAM MANAGEMENT SKILLS:</strong>
         </p>
         <ul class="list-disc list-inside mb-4">
           <li>
@@ -116,7 +134,7 @@
         </ul>
 
         <p class="mb-4">
-          <strong>Technical Proficiencies:</strong>
+          <strong>TECHNICAL PROFICIENCS:</strong>
         </p>
         <ul class="list-disc list-inside mb-4">
           <li>
@@ -141,7 +159,7 @@
         </ul>
 
         <p class="mb-4">
-          <strong>Additional Attributes:</strong>
+          <strong>ADDITIONAL ATTRIBUTES:</strong>
         </p>
         <ul class="list-disc list-inside mb-4">
           <li>
@@ -173,14 +191,14 @@
     <!-- Projects Section -->
     <section id="projects" class="py-20 px-4 bg-gray-100">
       <div class="container mx-auto">
-        <h2 class="text-3xl font-bold mb-8">Projects</h2>
+        <h2 class="text-3xl font-bold mb-8">KEY PROJECTS</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Project Card 1 -->
           <div class="bg-white shadow-md p-6 rounded-lg">
             <h3 class="text-xl font-bold mb-2">SIEP E-BIKE CHALLENGE</h3>
             <img
-              src="images/project1.jpg"
-              alt="Project 1 Image"
+              src="images/IMG-20240125-WA0002.jpg"
+              alt="e-bike"
               class="mb-4 rounded-md"
             />
             <p class="mb-4">
@@ -197,8 +215,8 @@
           <div class="bg-white shadow-md p-6 rounded-lg">
             <h3 class="text-xl font-bold mb-2">ANTI SLEEP ALARM FOR DRIVERS</h3>
             <img
-              src="images/project2.jpg"
-              alt="Project 2 Image"
+              src="images/IMG_20230424_143751.jpg"
+              alt="sleep alarm"
               class="mb-4 rounded-md"
             />
             <p class="mb-4">
@@ -207,55 +225,45 @@
               drivers, ensuring road safety and preventing accidents caused by
               fatigue.
             </p>
-            <a href="#" class="text-blue-500 hover:underline">View Project</a>
+            <a href="sleepalarm.html" class="text-blue-500 hover:underline"
+              >View Project</a
+            >
           </div>
 
           <!-- Project Card 3 -->
           <div class="bg-white shadow-md p-6 rounded-lg">
             <h3 class="text-xl font-bold mb-2">Project 2 Title</h3>
             <img
-              src="images/project2.jpg"
-              alt="Project 2 Image"
+              src="images/restoran.png"
+              alt="restoran Image"
               class="mb-4 rounded-md"
             />
-            <p class="mb-4">Project 2 description goes here.</p>
-            <a href="#" class="text-blue-500 hover:underline">View Project</a>
+            <p class="mb-4">
+              RESTORAN is a user-friendly web platform for booking dining
+              experiences at Coimbatore restaurants, offering seamless
+              reservations, reviews, and personalized recommendations.
+            </p>
+            <a href="restoran.html" class="text-blue-500 hover:underline"
+              >View Project</a
+            >
           </div>
 
           <!-- Project Card 4 -->
           <div class="bg-white shadow-md p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-2">Project 2 Title</h3>
+            <h3 class="text-xl font-bold mb-2">RFID BASED SECURITY SYSTEM</h3>
             <img
-              src="images/project2.jpg"
-              alt="Project 2 Image"
+              src="images/RFID-Biometric-Door-Lock-2.jpeg"
+              alt="rfid"
               class="mb-4 rounded-md"
             />
-            <p class="mb-4">Project 2 description goes here.</p>
-            <a href="#" class="text-blue-500 hover:underline">View Project</a>
-          </div>
-
-          <!-- Project Card 5 -->
-          <div class="bg-white shadow-md p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-2">Project 2 Title</h3>
-            <img
-              src="images/project2.jpg"
-              alt="Project 2 Image"
-              class="mb-4 rounded-md"
-            />
-            <p class="mb-4">Project 2 description goes here.</p>
-            <a href="#" class="text-blue-500 hover:underline">View Project</a>
-          </div>
-
-          <!-- Project Card 6 -->
-          <div class="bg-white shadow-md p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-2">Project 2 Title</h3>
-            <img
-              src="images/project2.jpg"
-              alt="Project 2 Image"
-              class="mb-4 rounded-md"
-            />
-            <p class="mb-4">Project 2 description goes here.</p>
-            <a href="#" class="text-blue-500 hover:underline">View Project</a>
+            <p class="mb-4">
+              Our team from Karpagam College of Engineering developed an
+              RFID-based home security system utilizing RFID tags and readers
+              for secure access control.
+            </p>
+            <a href="rfid.html" class="text-blue-500 hover:underline"
+              >View Project</a
+            >
           </div>
         </div>
       </div>
@@ -264,7 +272,7 @@
     <!-- Contact Section -->
     <section id="contact" class="py-20 px-4">
       <div class="container mx-auto">
-        <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+        <h2 class="text-3xl font-bold mb-8">CONTACT ME</h2>
         <form id="contactForm" class="max-w-lg mx-auto">
           <div class="mb-4">
             <label for="name" class="block text-sm font-medium text-gray-700"
